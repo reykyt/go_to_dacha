@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <form action="" class="form">
+            <h1 class="title">Вычислить стоимость поездки</h1>
+            <div class="form_distance">
+                <div class="distance_text">Расстояние (км)</div>
+                <input type="text" class="distance_input" oninput="say()">
+            </div>
+            <div class="form_gasoline_price">
+                <div class="gasoline_price_text">Цена бензина (руб/литр)</div>
+                <input type="text" class="gasoline_price_input" oninput="say()">
+            </div>
+            <div class="form_Consumption">
+                <div class="Consumption_text">Потребление (на 100км)</div>
+                <input type="text" class="Consumption_input" oninput="say()">
+            </div>
+            <div class="form_Price">
+                <div class="Price_text">Стоимость</div>
+                <input type="text" disabled class="Price_input">
+            </div>
+            <button class="form_btn" type="button" disabled>Вычислить!</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

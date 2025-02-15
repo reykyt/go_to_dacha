@@ -1,0 +1,93 @@
+body {
+    background-image: url(/NEUMORPHIC_CIRCLES_BACKGROUND.jpg);
+    background-repeat: no-repeat;
+}
+
+.wrapper,
+.form_btn {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form_distance,
+.form_gasoline_price,
+.form_Consumption,
+.form_Price {
+    display: flex;
+    max-width: 1000px;
+    column-gap: 50px;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.distance_input,
+.gasoline_price_input,
+.Consumption_input,
+.Price_input {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: rgba(167, 167, 167, 0.781);
+    font-size: 20px;
+}
+
+.form:hover {
+    animation: swing 0.5s ease;
+    animation-iteration-count: 1;
+}
+
+@keyframes swing {
+    15% {
+        transform: translateX(5px);
+    }
+
+    30% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(3px);
+    }
+
+    65% {
+        transform: translateX(-3px);
+    }
+
+    80% {
+        transform: translateX(2px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.form_btn {
+    max-width: 200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: aliceblue;
+    font-size: 20px;
+    background-color: rgb(138, 138, 138);
+}
+
+.form {
+    background-color: rgba(43, 42, 42, 0.514);
+    padding: 50px;
+    border-radius: 50px;
+    margin-top: 100px;
+    padding-bottom: 30px;
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
